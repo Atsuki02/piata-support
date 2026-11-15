@@ -1,0 +1,58 @@
+:root {
+  --paper: #f8f3e8;
+  --card: #fffcf6;
+  --ink: #3c2d23;
+  --ink-secondary: #827364;
+  --accent: #626f48;
+  --gold: #c5a365;
+  --line: rgba(60, 45, 35, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1d1c17;
+    --card: #28261f;
+    --ink: #f1e8d8;
+    --ink-secondary: #b3a592;
+    --accent: #a8b684;
+    --gold: #c9ac72;
+    --line: rgba(241, 232, 216, 0.1);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.logo {
+  margin: 0 0 24px;
+  font-family: Georgia, "Hiragino Mincho ProN", serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+h1 { font-family: "Hiragino Mincho ProN", serif; font-size: 24px; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+h3 { font-size: 16px; margin: 24px 0 4px; }
+p { margin: 0 0 12px; }
+
+.meta, .lead { color: var(--ink-secondary); font-size: 14px; }
+.contact { font-size: 17px; font-weight: 600; }
+.footer { margin-top: 48px; font-size: 14px; }
+
+a { color: var(--accent); }
